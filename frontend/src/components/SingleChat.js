@@ -32,7 +32,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
     autoplay: true,
     animationData: animationData,
     rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
+      preserveAspectRatio: "xMidYMid slice"
     },
   };
   const { selectedChat, setSelectedChat, user, notification, setNotification } =
@@ -228,7 +228,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
               mt={3}
             >
               {istyping ? (
-                <div>
+                <div >
                   <Lottie
                     options={defaultOptions}
                     // height={50}
@@ -241,7 +241,8 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
               )}
               <Input
                 variant="filled"
-                bg="#E0E0E0"
+                // bg="#E0E0E0"
+                bg="teal.900"
                 placeholder="Enter a message.."
                 value={newMessage}
                 onChange={typingHandler}

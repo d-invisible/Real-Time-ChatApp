@@ -3,9 +3,11 @@
 .App {
   min-height: 100vh;
   display: flex;
-  background-image: url("./background.png");
+  /* background-image: url("./background.png"); */
+  background: linear-gradient(to bottom, rgb(0, 71, 71),rgb(0, 150, 150));
   background-position: center;
   background-size: cover;
+  
 }
 
 ::-webkit-scrollbar {

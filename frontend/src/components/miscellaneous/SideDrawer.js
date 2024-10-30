@@ -31,6 +31,7 @@ import { Effect } from "react-notification-badge";
 import { getSender } from "../../config/ChatLogics";
 import UserListItem from "../userAvatar/UserListItem";
 import { ChatState } from "../../Context/ChatProvider";
+import {Image} from "@chakra-ui/react";
 
 function SideDrawer() {
   const [search, setSearch] = useState("");
@@ -129,21 +130,33 @@ function SideDrawer() {
         justifyContent="space-between"
         alignItems="center"
         bg="white"
+        // color="white"
         w="100%"
         p="5px 10px 5px 10px"
-        borderWidth="5px"
+        // borderRadius="12px"
+        // borderWidth="5px"
       >
         <Tooltip label="Search Users to chat" hasArrow placement="bottom-end">
-          <Button variant="ghost" onClick={onOpen}>
+          <Button variant="ghost"  onClick={onOpen}>
             <i className="fas fa-search"></i>
             <Text d={{ base: "none", md: "flex" }} px={4}>
               Search User
             </Text>
           </Button>
         </Tooltip>
-        <Text fontSize="2xl" fontFamily="Work sans">
-          Talk-A-Tive
-        </Text>
+
+        {/* <Text fontSize="2xl" as='b' fontFamily="Work sans">
+          Vahni
+        </Text> */}
+
+          <Image
+            height='40px'
+            width='300px'
+            objectFit='contain'
+            src='/Vahni_small.png'
+            alt='my logo'
+          />
+
         <div>
           <Menu>
             <MenuButton p={1}>

@@ -51,10 +51,10 @@ const MyChats = ({ fetchAgain }) => {
       flexDir="column"
       alignItems="center"
       p={3}
-      bg="white"
+      bg="black"
       w={{ base: "100%", md: "31%" }}
       borderRadius="lg"
-      borderWidth="1px"
+      // borderWidth="1px"
     >
       <Box
         pb={3}
@@ -66,7 +66,9 @@ const MyChats = ({ fetchAgain }) => {
         justifyContent="space-between"
         alignItems="center"
       >
-        My Chats
+        <Text fontSize="2xl" fontFamily="Work sans" color="white">
+          My Chats
+        </Text> 
         <GroupChatModal>
           <Button
             d="flex"
@@ -81,7 +83,8 @@ const MyChats = ({ fetchAgain }) => {
         d="flex"
         flexDir="column"
         p={3}
-        bg="#F8F8F8"
+        // bg="#F8F8F8"
+        bg="gray.900"
         w="100%"
         h="100%"
         borderRadius="lg"

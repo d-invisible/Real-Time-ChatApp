@@ -7,11 +7,13 @@ import {
   TabPanels,
   Tabs,
   Text,
+  Image,
 } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { useHistory } from "react-router";
 import Login from "../components/Authentication/Login";
 import Signup from "../components/Authentication/Signup";
+// import { Image } from '@chakra-ui/react';
 
 function Homepage() {
   const history = useHistory();
@@ -27,16 +29,25 @@ function Homepage() {
       <Box
         d="flex"
         justifyContent="center"
-        p={3}
+        p={0}
         bg="white"
         w="100%"
         m="40px 0 15px 0"
         borderRadius="lg"
         borderWidth="1px"
       >
-        <Text fontSize="4xl" fontFamily="Work sans">
-          Talk-A-Tive
-        </Text>
+        {/* <Text fontSize="4xl" fontFamily="Work sans">
+          Vahni
+        </Text> */}
+
+        <Image
+            height='100px'
+            width='300px'
+            objectFit='contain'
+            src='/Vahni_small.png'
+            alt='my logo'
+          />
+
       </Box>
       <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px">
         <Tabs isFitted variant="soft-rounded">
