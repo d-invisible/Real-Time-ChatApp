@@ -27,7 +27,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd Real-Time chatApp
+  cd Real-Time-ChatApp
 ```
 
 Install dependencies
